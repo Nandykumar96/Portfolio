@@ -1,0 +1,463 @@
+:root {
+	--body: #efefef;
+	--color: #000;
+	--primary: #299cdb;
+	/* --primary: #07cb79; */
+	--white: #fff;
+	--font-family: 'Mulish', sans-serif;
+	--font14: 14px;
+	--textgry: #3d4451;
+}
+/* 07cb79 */
+.prime-color{
+	color:  var(--primary);
+}
+.bg-primarys {
+	background-color: var(--primary);
+}
+img{
+	max-width: 100%;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 35px;
+}
+h3{
+	font-size: 20px;
+	color: #3d4451;
+}
+h4{
+	font-size: 25px;
+}
+h5{
+	font-size: 20px;
+}
+h6{
+	font-size: 18px;
+}
+p{
+	font-size: 14px;
+	
+}
+span{
+	font-size: 14px;
+}
+small{
+	font-size: 12px;
+}
+.w-15 {
+	width: 15%
+}
+
+.h-30 {
+	height: 30%;
+}
+.line-height30{
+	line-height: 30px
+}
+/**/
+body {
+	background: var(--body);
+	font-family: var(--font-family);
+	
+}
+.py-100{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+ul{
+	list-style: none;
+}
+.fs-13{
+	font-size: 13px;
+}
+
+/*main*/
+
+@media (min-width: 1200px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm {
+		max-width: 1200px;
+	}
+}
+.contentmain{
+padding: 220px 0 150px 0;
+}
+.row{
+	margin: 0;
+}
+/* section {
+	margin-top: -18%;
+	position: relative;
+} */
+
+.bg-primarys i {
+	font-size: 20px;
+}
+.profileid span{
+	font-size: 35px;
+	font-weight: bolder;
+	color: var(--primary);
+
+}
+.profile-preword span {
+	background-color: var(--primary);
+	padding: 5px 10px;
+}
+
+.profile-preword span:before {
+	content: '';
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 5px;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 0 0 8px 8px;
+	border-color: transparent;
+	border-left-color: #299cdb;
+}
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid var(--primary); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 0; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em;  Adjust as needed */
+  animation: 
+    typing 3.5s steps(10, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 30% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  20% { border-color: var(--primary); }
+}
+/**/
+
+
+/*animate from top to bottom*/
+
+
+ .info{
+width: 100px!important;
+
+ }
+
+/*main*/
+
+
+/*loader */
+
+.loader {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(241, 242, 243);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader>img {
+	width: 100px;
+}
+
+.loader.hidden {
+	animation: fadeOut 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+	25% {
+		opacity: 1;
+		visibility: visible;
+	}
+	50% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.thumb {
+	height: 100px;
+	border: 1px solid black;
+	margin: 10px;
+}
+
+
+/*loader*/
+
+
+/**/
+
+@media (min-width: 650px) {
+	.headerbg {
+		/* height: 515px; */
+	}
+}
+
+
+
+
+/* button starts */
+
+.btn-circle-download {
+	position: relative;
+	height: 48px;
+	width: 48px;
+	margin: auto;
+	border-radius: 100%;
+	background: white;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.2s ease;
+  }
+  .btn-circle-download:after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 200%;
+	height: 100%;
+	background-image: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+	transform: translateX(-100%);
+  }
+  .btn-circle-download svg {
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+  }
+  .btn-circle-download svg#border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	stroke: none;
+	stroke-dasharray: 144;
+	stroke-dashoffset: 144;
+	transition: all 0.9s linear;
+  }
+  .btn-circle-download svg#arrow {
+	position: absolute;
+	top: 14px;
+	left: 17px;
+	stroke: var(--primary);
+	transition: all 0.2s ease;
+  }
+  .btn-circle-download svg#check {
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	stroke: white;
+	transform: scale(0);
+  }
+  .btn-circle-download:hover {
+	background:var(--primary);
+  }
+  .btn-circle-download:hover #arrow path,
+  .btn-circle-download:hover #arrow polyline {
+	stroke: white;
+  }
+  .btn-circle-download.load {
+	background: white;
+  }
+  .btn-circle-download.load #arrow path,
+  .btn-circle-download.load #arrow polyline {
+	stroke: var(--primary);
+  }
+  .btn-circle-download.load #border {
+	stroke:var(--primary);
+	stroke-dasharray: 144;
+	stroke-dashoffset: 0;
+  }
+  .btn-circle-download.done {
+	background:var(--primary);
+	animation: rubberBand 0.8s;
+  }
+  .btn-circle-download.done:after {
+	transform: translateX(50%);
+	transition: transform 0.4s ease;
+	transition-delay: 0.7s;
+  }
+  .btn-circle-download.done #border,
+  .btn-circle-download.done #arrow {
+	display: none;
+  }
+  .btn-circle-download.done #check {
+	transform: scale(1);
+	transition: all 0.2s ease;
+	transition-delay: 0.2s;
+  }
+  
+  @keyframes rubberBand {
+	from {
+	  transform: scale(1, 1, 1);
+	}
+	30% {
+	  transform: scale3d(1.15, 0.75, 1);
+	}
+	40% {
+	  transform: scale3d(0.75, 1.15, 1);
+	}
+	50% {
+	  transform: scale3d(1.1, 0.85, 1);
+	}
+	65% {
+	  transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+	  transform: scale3d(1.05, 0.95, 1);
+	}
+	to {
+	  transform: scale3d(1, 1, 1);
+	}
+  }
+  .credit {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: all 0.2s ease;
+	-webkit-user-select: none;
+	user-select: none;
+	opacity: 0.6;
+  }
+  .credit img {
+	width: 72px;
+  }
+  .credit:hover {
+	transform: scale(0.95);
+  }
+
+  .list-group-item{
+	background-color: transparent;
+  }
+  .aboutimgs{
+	position: absolute;
+	right: 27px;
+    top: 25px;
+    border: 2px dashed #299cdb;
+    padding: 10px;
+    width: 130px;
+}
+.abouttxt {
+    position: absolute;
+    left: -59px;
+    bottom: 63px;
+    border-radius: 100px;
+    padding: 10px;
+    width: 208px;
+    height: 78px;
+    box-shadow: 0px 30px 80px rgba(47, 65, 88, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* fifth section */
+
+.activefolio, .btn:hover {
+	background-color: var(--primary);
+	color: white;
+  }
+  .fifthsec .btn:focus{
+box-shadow: none;
+  }
+
+.portfoliodesign{
+	overflow: hidden;
+    max-width: 582px;
+    margin: 0 auto;
+  
+}
+
+ @media screen and (max-width: 600px){
+.timeline ul li {
+    margin-left: -17px!important;
+}
+.about_me .aboutbar{
+	padding: 0!important;
+}
+.abouttxt {
+	left: -5px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding-left: 0!important;
+}
+.profileid, .profileid span {
+	font-size: 25px!important;
+	color: var(--primary);
+}
+.modal.show .modal-dialog{
+	margin: 0px 20px;
+
+}
+.modal.show{
+	padding-left: 0;
+}
+}
+
+@media screen and (max-width: 900px){
+.about_me .col-md-6{
+padding-left: 0;
+}
+.social-media{
+	display:none!important;
+}
+.social-media.mediacopy{
+	display: block!important;
+}
+}
+@media (max-width: 768px){
+.faq .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+.project-item h4
+{
+	color: var(--textgry);
+	font-size: 15px;
+}
+.contact i{
+	font-size: 40px;
+    color: var(--primary);
+}
+.contact span{
+	color: #6a6a6a;
+	font-weight: 400;
+}
+.filter-button{
+	border: 1px solid var(--primary);
+	margin: 10px 10px;
+}
+
+.mediacopy i{
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	line-height:40px;
+	
+}
+
+
