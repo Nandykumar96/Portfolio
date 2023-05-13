@@ -159,7 +159,7 @@
 }
 .btn-download:hover,.btn-download:focus {
     background-color: var(--primary);
-    color: var(--white)!important;
+    color: var(--primary)!important;
     outline: none!important;
 }
 .bghire{

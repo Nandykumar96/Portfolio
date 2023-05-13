@@ -412,6 +412,9 @@ box-shadow: none;
 .modal.show{
 	padding-left: 0;
 }
+.bghire {
+	font-size: 25px!important;
+}
 }
 
 @media screen and (max-width: 900px){
