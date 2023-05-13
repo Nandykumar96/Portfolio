@@ -422,7 +422,7 @@ a:hover, a:focus{
 #btn-back-to-top {
     position: fixed;
     bottom: 3rem;
-    right: 3rem;
+    right: 1rem;
     box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
     width: 60px;

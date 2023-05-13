@@ -412,8 +412,8 @@ box-shadow: none;
 .modal.show{
 	padding-left: 0;
 }
-.bghire {
-	font-size: 25px!important;
+.bghire .section-title h2{
+	font-size: 20px!important;
 }
 }
 
